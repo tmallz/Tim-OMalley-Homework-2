@@ -1,0 +1,140 @@
+/* This is my styles page */
+
+/* Adding the general page stylings*/
+body {
+    background-color: #d9dcd6;
+}
+
+/* styling the background color and text color of the header */
+header {
+    padding: 20px;
+    font-family: 'Times New Roman', 'Georgia', 'Garamond', 'serif';
+    background-color: #494b4ed5;
+    color: #ffffff;
+}
+
+/* Sets the font size and changes the h1 tag to an inline element */
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* sets margin to the right and padding for nav bar floats links to right side of page and sets font family and size*/
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Times New Roman', 'Georgia', 'Garamond', 'serif';
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+/* Sets the nav bar links as inline blocks */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* set color of links to white and removes underline*/
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* applies flexbox to the main part of the page. Doing desktop first design for this
+because I think a professional would be looking at this on a computer over a phone*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    height: 100%;
+  }
+
+/* sets color and stlings for aside and adds flex*/
+aside {
+    flex: 1;
+    background-color:  #494b4ed5;
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+  }
+
+/* Sets the font size and centers the heading of aside */
+aside h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* sets picture as a block and centers it */
+.selfie{
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* flexes the section at a 3 to 1 from the aside */
+section{
+    flex: 3;
+    /* width: 75%; */
+    background-color:  #e3beee;
+}
+  
+section h2{
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.project1 .firstProject{
+    display: block;
+    width: 75%;
+    margin: 10px
+}
+
+.project2 .projectPics{
+    display: inline-block;
+    width: 50%;
+    margin: 10px
+}
+
+/* sizes font and adds margin and padding */
+.contactMe h2{
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+section p{
+    padding: 5px;
+    margin: 10px;
+}
+
+.resume{
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+footer{
+    text-align: center;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    nav{
+      flex-direction: column;
+      order: 0;
+    }
+    section{
+        order: 1;
+    }
+  
+  @media screen and (min-width: 992px) {
+    header {
+    }
+  } 
