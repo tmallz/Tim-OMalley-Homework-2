@@ -3,11 +3,68 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Tim O'Malley Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="./Assets/CSS/reset.css" />
+    <link rel="stylesheet" href="./Assets/CSS/stlyes.css"/>
 </head>
+<!-- This is the meat and potatoes -->
 <body>
-    
+    <header>
+        <h1>Tim O'Malley's Portfolio</h1>
+        <!-- below the nav buttons are created -->
+        <nav>
+            <!-- Put the links in a list for styling purposes -->
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#my-work">My Work</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>          
+        </nav>
+    </header>
+    <!-- Created a main to house an aside for my about me section and nested sections for the links to my content. -->
+    <main>
+        <!-- An aside that sits on the left side of the page -->
+        <aside class = "about-me" id = "about-me">
+            <h2>About Me</h2>
+                <img src="./Assets/images/20200930_213531.jpg" alt="A Picture of Me" class = "selfie"/>
+            <p>
+                My name is Timothy O'Malley, an apsiring Software Engineer/Web Developer. In college I worked with C and C++ and have a pretty strong foundation those. I am currently
+                a mechanincal engineer that does HVAC engineering for industrial/commercial buildings. This isn't directly related to software/web development I think a lot of the 
+                problem solving skills I have from engineering will be applicable in a the tech industry.
+                <br>
+                <br>
+                I am currently taking a 6 month coding bootcamp at Northwestern University to get the skills necessary to become a full stack web developer. As of now we have done a 
+                lot of work with HTML and CSS, and just started to dabble into javascript. The loayout of this Portfoliois a good example of the HTML and CSS that I have learned so far.
+                I don't have any projects showing off any javascript yet but I will update that in as they come.
+            </p>
+        </aside>
+        <!-- A section that is on the right side of the page -->
+        <Section>
+            <section class = "my-work" id = "my-work">
+                <h2>Below are some examples of work I've done</h2>
+                <section class="project1">
+                    <a href= "https://tmallz.github.io/prework-about-me"><img src="./Assets/images/prework website screenshot.PNG" 
+                        alt = "A picture of my first website" class = firstProject> </a>
+                    <p>This is my first prework project, I am using this as a placeholder til I have a better example.</p>
+                </section>
+                <section class="project2">
+                    <a href= "https://tmallz.github.io/Tim-OMalley-Homework01/"><img src="./Assets/images/homework website screenshot.PNG" 
+                        alt = "A picture of my first website" class = projectPics> </a>
+                    <p>This is my first project, I am using this as a placeholder til I have a better example.</p>
+                </section>
+            </section>
+            <section class = "contactMe" id = "contactMe">
+                <h2>Phone: 630-379-7358         Email: tomalley24@gmail.com</h2>
+            </section>
+            <section class = "resume" id = "resume">
+                <a href="./Assets/resume/timothy resume.pdf">Click here download my resume</a>
+            </section>
+        <Section>
+    </main>
+    <footer>
+        Thanks for Visiting!
+    </footer>
 </body>
 </html>
